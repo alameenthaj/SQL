@@ -1,5 +1,10 @@
-CREATE TABLE product(id int primary key,name varchar(30),category varchar(30),price float,in_stock varchar(30));
-INSERT INTO product VALUES(1,'apple','fruit',350,'yes'),
-INSERT INTO product VALUES(2,'orange','fruit',300,'no'),
-INSERT INTO product VALUES(3,'iphone','Mobile',100350,'yes'),
-INSERT INTO product VALUES(4,'vivo','Mobile',80000,'yes'),
+INSERT INTO STUDENT VALUES(100,"Ameen",24,"physics",80),
+INSERT INTO STUDENT VALUES(101,"Asif",23,"chemistry",80);
+INSERT INTO STUDENT VALUES(102,"sandra",19,"cs",67);
+INSERT INTO STUDENT VALUES(103,"Asiq",21,"bca",90);
+
+
+SELECT * FROM students WHERE age >20;
+SELECT * FROM students WHERE department  IN("cs","physics");
+SELECT * FROM students WHERE grade = 90;
+SELECT * FROM students WHERE grade between 70 AND 90;

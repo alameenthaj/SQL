@@ -1,8 +1,5 @@
-INSERT INTO books VALUES(1, 'Learn SQL', 'John Smith', 400, 10),
-                        (2, 'Mastering Python', 'Jane Doe', 600, 5),
-                        (3, 'HTML & CSS Basics', 'Alan Webb', 300, 8);
-
-
-1.update books set price =  price+50,stock=12 where title = 'Learn SQL';
-2.update books set stock=stock-2 where price>500;
-3.delete from books where book_id=3;
+CREATE TABLE product(id int primary key,name varchar(30),category varchar(30),price float,in_stock varchar(30));
+INSERT INTO product VALUES(1,'apple','fruit',350,'yes'),
+INSERT INTO product VALUES(2,'orange','fruit',300,'no'),
+INSERT INTO product VALUES(3,'iphone','Mobile',100350,'yes'),
+INSERT INTO product VALUES(4,'vivo','Mobile',80000,'yes'),
