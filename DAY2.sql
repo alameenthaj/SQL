@@ -1,11 +1,5 @@
-INSERT INTO  books VALUES(1,"the great gatsby","ameen",200,"fiction),
-INSERT INTO  books VALUES(2,"Harry potter","asif",2500,"history"),
-INSERT INTO  books VALUES(3,"the great gatsby","ameen",300,"science"),
-INSERT INTO  books VALUES(4,"thegatsby","Dan Brown",800,"mistery"),
-INSERT INTO  books VALUES(5,the great gatsby","ameen",240,"fiction");
-
-
-SELECT * FROM BOOKS WHERE PRICE >400;
-SELECT * FROM BOOKS WHERE GENRE IN ("HISTORY","SCIENCE","FICTION");
-SELECT * FROM BOOKS WHERE GENRE ="THE GREAT GATSBY";
-SELECT * FROM BOOKS WHERE AUTHOR !='Dan Brown' ;
+CREATE TABLE product(id int primary key,name varchar(30),category varchar(30),price float,in_stock varchar(30));
+INSERT INTO product VALUES(1,'apple','fruit',350,'yes'),
+INSERT INTO product VALUES(2,'orange','fruit',300,'no'),
+INSERT INTO product VALUES(3,'iphone','Mobile',100350,'yes'),
+INSERT INTO product VALUES(4,'vivo','Mobile',80000,'yes'),
