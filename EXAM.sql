@@ -1,11 +1,11 @@
  CREATE TABLE employee (
-         emp_id INT PRIMARY KEY,
+         id INT PRIMARY KEY,
          emp_name VARCHAR(50),
          department VARCHAR(50),
          `leave` INT
 );
 
-INSERT INTO employee (emp_id, emp_name, department, `leave`) VALUES
+INSERT INTO employee (id, emp_name, department, `leave`) VALUES
         (1, 'Raju', 'Sales', 1),
         (2, 'Sangeetha', 'Sales', 3),
         (3, 'Vinay', 'Operations', 8),
@@ -19,7 +19,7 @@ INSERT INTO employee (emp_id, emp_name, department, `leave`) VALUES
 
  CREATE TABLE exam (
     id int primary key,
-    employee_id  int references employee(emp_id),
+    employee_id  int references employee(id),
     exam_status varchar(12));
 
  INSERT INTO exam (id, Employee_id, exam_status) VALUES
